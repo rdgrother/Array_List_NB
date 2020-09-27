@@ -34,8 +34,8 @@ public class Main {
                 case 1: // Caso digite 1 vamos para o cadastro de produtos
                     Produtos p1 = new Produtos(); //Instanciando o objeto produto e chamando seu construtor
                     System.out.println("Digite o nome do produto");
-                    ler.nextLine();
-                    p1.setNome(ler.nextLine()); //Grava nome e passa para outra linha
+                    ler.nextLine(); //Grava nome e passa para outra linha
+                    p1.setNome(ler.nextLine()); //Aqui uso setNome pois agora tenho um método modificador
                     do{ 
                         System.out.println("Digite a quantidade:");
                         p1.setQuantidade(ler.nextInt());
@@ -46,7 +46,7 @@ public class Main {
                     do{
                         System.out.println("Digite o valor unitário:");
                         p1.setValorUnitario(ler.nextDouble());
-                        if(p1.getValorUnitario()<=0){
+                        if(p1.getValorUnitario()<=0){ // Aqui tenho um método acessor get 
                             System.out.println("Valor Inválido");
                         }
                     }while(p1.getValorUnitario()<=0);

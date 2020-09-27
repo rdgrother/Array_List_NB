@@ -11,7 +11,7 @@ public class ListaDeCompras {
     
     private ArrayList<Produtos> lista;
     
-    //Método Construtor
+    //Método Construtor do Array List, o método construtor tem sempre o mesmo nome da classe que ele está
     public ListaDeCompras(){
         lista = new ArrayList<>();
     }
