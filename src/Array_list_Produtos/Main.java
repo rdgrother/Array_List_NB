@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Main {
    
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Adiciona na classe produto e depois na lista de compras pois usamos apenas um objeto
         
         Scanner ler = new Scanner (System.in);
         
@@ -98,7 +98,7 @@ public class Main {
                  System.out.println("Opção Inválida");
             }
             
-        }while(op!=0); // Fim Switch case
+        }while(op!=0); // Enquanto for diferente de 0 ele vai executar 
         
     }
     
